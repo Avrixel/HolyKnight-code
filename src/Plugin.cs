@@ -6,9 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using SideLoader;
 
 // RENAME 'OutwardModTemplate' TO SOMETHING ELSE
-namespace OutwardModTemplate
+namespace HolyKnightCode
 {
     [BepInPlugin(GUID, NAME, VERSION)]
     public class Plugin : BaseUnityPlugin
@@ -40,17 +41,17 @@ namespace OutwardModTemplate
 
         }
 
-        // This is an example of a Harmony patch.
-        // If you're not using this, you should delete it.
+        /* This is an example of a Harmony patch.
+           If you're not using this, you should delete it.
         [HarmonyPatch(typeof(ResourcesPrefabManager), nameof(ResourcesPrefabManager.Load))]
         public class ResourcesPrefabManager_Load
         {
             static void Postfix()
             {
-                // This is a "Postfix" (runs after original) on ResourcesPrefabManager.Load
-                // For more documentation on Harmony, see the Harmony Wiki.
-                // https://harmony.pardeike.net/
+                   This is a "Postfix" (runs after original) on ResourcesPrefabManager.Load
+                   For more documentation on Harmony, see the Harmony Wiki.
+                   https://harmony.pardeike.net/
             }
-        }
+        }*/
     }
 }
